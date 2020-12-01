@@ -4,9 +4,9 @@ changes by cherima2
 changes by cherima3
 Changes by Aliya again
 changes by cherima2
-<<<<<<< HEAD
-This is my second chanhes trial  by "aliya"
-=======
+
+This is my second chanhes trial  by "aliya..."
+
 
 
 
@@ -15,4 +15,4 @@ lts c the problem
 
 cherima done changes for 2nd time
 
->>>>>>> 982977c6478786d5121324f70b00edccb88b427c
+
