@@ -6,5 +6,9 @@ Changes by Aliya again
 changes by cherima2
 
 
+<<<<<<< HEAD
 This is out second trial on git branch ----jagpreet
 lts c the problem
+=======
+cherima done changes for 2nd time
+>>>>>>> f4b75e710d285aa1bfff6c4e16b345c3da6af142
