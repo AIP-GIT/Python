@@ -1,0 +1,18 @@
+Write a Python program to get the Python version you are using. 3.Write a Python program to display the current date and time
+
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+output:
+Current date and time : 
+2020-12-05 12:55:49
+
+import sys
+print("Python version")
+print (sys.version)
+
+output:
+Python version
+3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0]
