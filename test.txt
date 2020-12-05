@@ -6,4 +6,23 @@ Changes by Aliya again
 changes by cherima2
 
 
+<<<<<<< HEAD
 This is out second trial on git branch ----jagpreet.....
+=======
+This is my second chanhes trial  by "aliya..."
+
+
+
+
+This is out second trial on git branch ----jagpreet
+lts c the problem
+
+cherima done changes for 2nd time
+
+let spread awareness by "aliya"
+
+Nasrin done changes.
+
+
+
+>>>>>>> 58b2685d3ab29d3be959ebd8aea083e387d61fd1
