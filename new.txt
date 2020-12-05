@@ -1,0 +1,40 @@
+certifi==2020.11.8
+chardet==3.0.4
+idna==2.10
+requests==2.25.0
+urllib3==1.26.2
+
+/*Find all the employees whose experience in the company is more than 6 months and on bench.*/
+create table emp(
+              emp_name varchar(255),
+              emp_id int,
+              emp_exp int,
+              emp_on_bench varchar(255)
+
+);
+insert into emp values('aaa',111,1,'on_bench');
+insert into emp values('aba',222,2,'not_on_bench');
+insert into emp values('aab',333,3,'on_bench');
+insert into emp values('bbb',444,4,'not_on_bench');
+select * from emp where emp_exp>2 and emp_on_bench='on_bench';
+
+/*Find the students and their total marks.                                                                             
+Studid       Name        S1                  S2             S3
+101            A              70                 80 
+102            B              50                 60             100     
+103            C              30                                   60*/
+create table std(
+               std_id int,
+               std_name varchar(255),
+               std_s1 int,
+               std_s2 int,
+               std_s3 int
+);
+insert into std values(101,'A',70,80,NULL);
+insert into std values(102,'B',50,80,100);
+insert into std values(103,'C',30,NULL,60);
+select * from std;
+select avg(std_s1) from std;
+select sum(std_s1+std_s2+std_s3) as total from std;
+
+                                                                                                                                                                                                    
