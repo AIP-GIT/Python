@@ -168,3 +168,107 @@ Char(inputStr)
 
 
 
+#Given a range of first 10 numbers,Iterate from start number to the end number and print the sum of the current number and previous number.
+previous_num = 0
+for i in range(10):
+    sum = previous_num + i
+    print(f'Current number {i} Previous Number {previous_num} is {sum}')
+    previous_num = i
+
+#Given a string,display only those characters which are present at an even index number.
+def Char(str):
+  for i in range(0, len(str)-1, 2):
+    print("index[",i,"]", str[i] )
+
+inputStr = "cherima" 
+print("Orginal String is: ", inputStr)
+
+print("even index chars:-")
+Char(inputStr)
+
+#Given a string and an integer number n , remove character from a string from zero up to n and return  a new string.
+def removeChars(str, n):
+  return str[n:]
+
+print("Removing n number of chars")
+print(removeChars("pynative", 4))
+
+#Given a list of numbers, return true if first and last number of a list is same .
+def ckeckList(lst):
+  list= lst[0] 
+  abc = True  
+  for item in lst:
+    if list != item:
+      abc = False
+      break; 
+              
+    if (abc == True):
+       print("Equal") 
+    else: 
+      print("Not equal")             
+lst = ['ABCD', 'ABCD', 'ABCD', 'ABCD', ] 
+ckeckList(lst)
+
+#Given  a list of numbers, Iterate it and print only those numbers which are divisible of 5.
+lower=int(input("Enter lower range limit:"))
+upper=int(input("Enter upper range limit:"))
+n=int(input("Enter the number to be divided by:"))
+for i in range(lower,upper+1):
+    if(i%n==0):
+        print(i)
+        
+#Return the total count of sub-string "Emma" appears in the appears in the given string.               
+#Given string is"Emma is good developer .Emma is a writer."        
+sampleStr = "Emma is good developer. Emma is a writer"
+cnt = sampleStr.count("Emma")
+print(cnt)
+
+#Print the following pattern:  
+1
+22
+333
+4444
+55555
+
+rows = 6
+for num in range(rows):
+    for i in range(num):
+        print(num, end=" ")
+    print(" ")  
+    
+ #Reverse a given number and return true if it is the same as the original number.
+def rev_number(n):
+  s = 0
+  while True:
+    k = str(n)
+    if k == k[::-1]:
+      break
+    else:
+      m = int(k[::-1])
+      n += m
+      s += 1
+  return n 
+print(rev_number(1473))
+  
+#Given a two list of numbers create a new  list such that new list should contain only odd numbers from the first list and even 
+numbers from the second list.  
+from numpy import array
+a=array([1,2,3,4,5,6]) 
+b=array([7,8,9,10,11,12]) 
+
+c = [*a[a%2 == 0], *b[b%2 != 0]]
+print(c)
+
+#Write a code to extract each digit from an integer, in the reverse order.
+num = int(input("Enter any Number: "))
+Result = 0
+def Result_Int(num):
+    global Result
+    if(num > 0):
+        Reminder = num %10
+        Result = (Result *10) + Reminder
+        Result_Int(num //10)
+    return Result
+ 
+Result = Result_Int(num)
+print("Reverse of entered number is = %d" %Result)
