@@ -1,0 +1,17 @@
+/*Employee (empid,empname,deptid,salary).Select all the employees whose           salary >=5000 or<=10000.*/
+SELECT EMPLOYEE_ID,FIRST_NAME,DEPARTMENT_ID,SALARY FROM HR.EMPLOYEES;
+WHERE SALARY BETWEEN 5000 AND 10000
+
+/*Select the employees whose experience is greater than 5.*/
+CREATE TABLE ABC(
+              EMP_NAME VARCHAR(255),
+              EMP_ID INT,
+              EXP INT
+);
+INSERT INTO ABC VALUES('SONI',01,5);
+INSERT INTO ABC VALUES('MONI',02,4);
+INSERT INTO ABC VALUES('CONI',03,6);
+INSERT INTO ABC VALUES('OONI',04,8);
+INSERT INTO ABC VALUES('PONI',05,2);
+SELECT * FROM ABC;
+SELECT EMP_NAME,EMP_ID FROM ABC WHERE EXP > 5;
