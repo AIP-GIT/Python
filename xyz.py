@@ -119,6 +119,51 @@ num=int(input("Enter the total number of list:"))
 for i in range(1,num+1):
   value=int(input("Enter the value of %d element:" %i))
   numlist.append(value)
+
+
+
+
+#Write a program which accepts the radius of circle from the user and compute the area.
+r=int(input("enter the radius r: "))
+pie=3.14
+area=2*pie*r
+print("area of circle:",area)
+
+#Python program to find the squareroot.
+a=int(input("Enter value of a:"))
+sq=a*a
+print("square root:",sq)
+
+#Python program to swap two variables.
+x = 10
+y = 50
+temp = x 
+x = y 
+y = temp  
+print("Value of x:", x) 
+print("Value of y:", y)
+
+
+#Python program to check whether the number is positive , negative or 0.
+number = int(input("Enter number: "))
+if number < 0:
+   print("The entered number is negative.") 
+elif number > 0:
+    print("The entered number is positive.")
+elif number == 0:
+    print("Number is zero.")
+else:
+    print("The input is not a number")
+    
+    
+ #Give a two integer number and return their product and if the product is greater than 1000,then return their sum.  
+def Char(str):
+  for i in range(0, len(str)-1, 2):
+    print("index[",i,"]", str[i] )
+inputStr = input("Enter String ")
+print("Orginal String is ", inputStr)
+print("Printing only even index chars")
+Char(inputStr) 
    
 
 
