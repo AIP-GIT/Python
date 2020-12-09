@@ -272,3 +272,37 @@ def Result_Int(num):
  
 Result = Result_Int(num)
 print("Reverse of entered number is = %d" %Result)
+
+
+#Write a program to compute simple interest.
+p=int(input("Enter any number for p:"))
+r=int(input("Enter any number for r:"))
+t=int(input("Enter any number for t:"))
+SI=(p*r*t)/100
+print(SI)
+
+
+#write a program to find GCD of two numbers
+num1=int(input("enter any num1:"))
+num2=int(input("enter any num2:"))
+for i in range(1,num2+1):
+  if(num1%i==0 and num2%i==0):
+    GCD=i
+print(GCD)
+
+
+#Program for maximum of 3 numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+ 
+if (num1 > num2) and (num1 > num3):
+   largest = num1
+elif (num2 > num1) and (num2 > num3):
+   largest = num2
+else:
+   largest= num3
+ 
+print("The maximum of 3 numbers are:",largest)
+
+
