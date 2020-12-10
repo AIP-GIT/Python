@@ -86,3 +86,76 @@ print(test_list)
 r=int(input('Enter Radius: '))
 Area=3.14*r*2
 print(Area)
+
+# Python program to find the squareroot.
+num=int(input('Enter Number: '))
+Sr=num*2
+print(Sr)
+
+# Python program to swap two variables.
+a=int(input("Enter First Number:"))
+b=int(input("Enter Second Number:"))
+c=a
+a=b
+b=c
+print("First Number After Swap:",a)
+print("Second Number After Swap:",b)
+
+# Python program to check whether the number is positive , negative or 0.
+num=int(input("Enter number: "))
+if (num>0):
+       print("Number is Positive")
+elif (num==0):
+     print("Number is Zero")
+else:
+     print("Number is Negative")
+	 
+# Give a two integer number and return their product and if the product is greater than 1000,then return their sum.
+p=int(input("Enter first number: "))
+r=int(input("Enter second number: "))
+product=p*r
+if (product>1000):
+ sum=p+r
+ print("Sum is: ",sum)
+else:
+ print("Product is: ",product)
+ 
+ # Given a range of first 10 numbers,Iterate from start number to the end number and print the sum of the current number and previous number.
+p_num = 0
+for i in range(10):
+    sum = p_num + i
+    print(sum)
+    p_num = i
+	
+# Given a string,display only those characters which are present at an even index number.
+num=str(input("Enter string: "))
+c=num[0::2]
+print(c)
+
+# Given a string and an integer number n , remove character from a string from zero up to n and return  a new string.
+str=input("Enter string: ")
+def rc(str, n):
+  return str[n:]
+n=int(input("Enter number of character to be removed: "))
+print(rc(str, n))
+
+# Given a list of numbers, return true if first and last number of a list is same .
+n = int(input("Enter number of elements : ")) 
+b = []
+for i in range(n): 
+  e=int(input("Enter the numbers: ")) 
+  b.append(e)
+  res =  [ b [i] for i in (0, -1) ]
+firstElement = b[0]
+lastElement = b[-1]
+if (firstElement == lastElement):
+  print("The first and last element of list are : ",res) 
+else:
+ print('The first and last element are not same')
+ 
+# Given  a list of numbers, Iterate it and print only those numbers which are divisible of 5.
+ b = [1,4,2,5,7]
+for i1 in b: 
+ if (i1%5==0):
+  print(i1)
+
