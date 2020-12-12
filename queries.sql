@@ -303,4 +303,5 @@ SELECT DISTINCT department_id FROM HR.EMPLOYEES;
 /*Write an SQL query to print the first three characters of  FIRST_NAME from Worker table.*/
 Select substr(FIRST_NAME,1,3) from HR.EMPLOYEES;
 
-/*
+/*Write an SQL query to print the FIRST_NAME from Worker table after removing white spaces from the right side.*/
+SELECT TRIM(first_name) FROM hr.employees;
