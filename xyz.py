@@ -1077,3 +1077,90 @@ for i in range(3):
   for j in "ABC":
       print(i,j)
   print()
+  
+#85.#check for palindrome in a string without using loop statement 
+def palindrom(s):
+  return s ==s[::-1]
+s="RADAR"
+result=palindrom(s) 
+if result:
+  print("yes")
+else:
+  print("no")   
+  
+#86.#sort an unsorted array in increasing order without using function
+numList=[]
+num=int(input("enter the total number of list:"))
+for i in range(1,num+1):
+  value=int(input("enter the value of %d element:"%i))
+  numList.append(value)
+for i in range(num):
+  for  j in range(i+1,num):
+    temp=numList[i]
+    numList[i]=numList[j]
+    numList[j]=temp
+print("element after sorting list in assending order:",numList)    
+
+
+#87write a program that accepts sequence of lines as input and print the lines after making all characters in the sentence capitalized.suppose the following input is supplies to the program:hello world practice makes perfect...
+#then output should be:  HELLO WORLD PRACTICE MAKES PERFECT
+lines=["hello world"]
+while True:
+  l=input()
+  if l:
+    lines.append(l.upper())
+  else:
+       break;
+for l in lines:
+     print(l)     
+     
+     
+#88.given string and an integer number n remove cgharacters from a string from zero upto n and return a new string
+def Chars(str,n):
+  return str[n:]
+print("removing n number of chars")
+print(Chars("cherima",2))  
+
+
+
+#89given a list of numbers,return true if first and lasr number of a list is same
+def first(NumList):
+  print("Given list is",NumList)
+  firstele=NumList[0]
+  lastele=NumList[-1]
+  if (firstele==lastele):
+     return True
+  else:
+    return False 
+numList=[10,20,30,40,60,10]
+print("result:",first(numList))       
+
+
+
+
+#90Given string,display only those character which are present at an even index number
+def Char(str):
+  for name in range(0,len(str)-1,2):
+    print("index[",name,"]", str[name])
+Str="cherima"
+print("original string:",Str)
+print("print only even index char:")
+Char(Str)   
+
+
+
+#91given a string and an integer number n,remove characters from a string starting from zero upto n and return stringh
+def Char(Str):
+   for name in range(0,len(Str)):
+     Str="resuhaluapara"
+     print("original string:",Str)
+   return (Str)
+
+
+#92.given a string of odd length greater 7,return a string made of the middle three chars of the given string.Given:"jhonDipPeta".STR2="jaSonAy"
+def middle(txt):
+  return txt[(len(txt)-1)//2:(len(txt)+2)//2]
+print(middle("JhonDipPeta")) 
+print(middle("jaSonAy")) 
+
+
