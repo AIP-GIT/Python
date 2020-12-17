@@ -1011,8 +1011,20 @@ term=4
 binary(b,fir,las,term)
 
 
+#que79.Discuss the exception when -ve numbers
+       
+try:
+  print(1)
+  print(4)
+  print(-5)
+except:
+  print(4)
+else:
+  print(5)
 
-#que79.Write a function to check if input number is a prime?
+
+
+#que80.Write a function to check if input number is a prime?
 num = 11 
 if num > 1: 
    for i in range(2, num): 
@@ -1026,7 +1038,7 @@ else:
    print(num, "is not a prime number")
 
 
-#que80.One file will be shared : You will need to read the files and solve following problems:-                                            
+#que81.One file will be shared : You will need to read the files and solve following problems:-                                            
 #1.)Find  all the words which contains 'uu' in the file .   
 fopen =open(r"drive/My Drive/abcde/scrabble/sowpods.txt")
 words=fopen.readlines()
@@ -1034,4 +1046,34 @@ for word in words:
  if "UU" in word:
   print(word.strip())
 fopen.close()
+
+#que82.Create an add function that is agnostic to number of inputs Example: My_Custom_Add (1, 2, 3, 4, 5)
+def add(*args):
+     print(sum(args))
+    
+add(1,2,3,4,5)
+
+#que83Try explaining this with exception as well to write clean code. Will anyways be explaining that in the class. 
+#But atleast below code is expected from the students.
+ try:
+  print(1)
+  print(2/0)
+  print(3)
+except:
+  print(4)
+else:
+  print(5)
+finally:
+  print(6)
   
+  
+#84.#Run the code below to generate a matrix take an input character as target
+#print the row index and column index if the character is found Else print "Not found" .                           # Input:Enter Target character :h       ;        #Output: 2  4  ;   table = [list("abcd"), list("efgh"),list("ijkl")]
+
+import random
+mat= [[random.randint(0,10) for i in range (4)] for row in range(2)]
+print(mat)
+for i in range(3):
+  for j in "ABC":
+      print(i,j)
+  print()
