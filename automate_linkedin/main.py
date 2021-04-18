@@ -3,11 +3,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-ACCOUNT_EMAIL = "ckandu1187@gmail.com"
-ACCOUNT_PASSWORD = "rajkapoor"
+ACCOUNT_EMAIL = "YOUR_LINKEDIN_EMAIL_ID"
+ACCOUNT_PASSWORD = "LINKEDIN_PASSWORD"
 PHONE = "0000000000"
 
-chrome_driver_path = "/home/amit/workspace/AIP_GIT/Python/automate_linkedin/chromedriver"
+chrome_driver_path = "$PATH_CHROMEDRIVER/chromedriver"
 driver = webdriver.Chrome(chrome_driver_path)
 driver.get("https://www.linkedin.com/jobs/search/?f_LF=f_AL&geoId=102257491&keywords=marketing%20intern&location=London%2C%20England%2C%20United%20Kingdom&redirect=false&position=1&pageNum=0")
 
