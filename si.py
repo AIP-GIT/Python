@@ -1,4 +1,4 @@
-#start programs in github
+##start programs in github
 
 p=(input("Enter college fees:"))
 r=(input("Enter college rating:"))
